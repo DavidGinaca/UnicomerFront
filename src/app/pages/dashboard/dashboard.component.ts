@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { LoginService } from 'src/app/services/auth/login.service';
+
 
 
 @Component({
@@ -7,17 +7,7 @@ import { LoginService } from 'src/app/services/auth/login.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
-  userLoginOn:boolean=false;
-  constructor(private loginService:LoginService) { }
+export class DashboardComponent{  
 
-  ngOnInit(): void {
-    this.loginService.currentUserLoginOn.subscribe({
-      next:(userLoginOn) => {
-        this.userLoginOn=userLoginOn;
-      }
-    });
-
-  }
 
 }

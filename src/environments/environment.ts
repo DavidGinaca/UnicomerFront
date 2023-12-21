@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  urlHost:'http://localhost:9595/',
-  urlApi: 'http://localhost:9595/api/v1/',
+  urlHost:'https://techforb-o8zd.onrender.com',
+  urlApi: 'https://techforb-o8zd.onrender.com/api/v1/',
   userId:1,
-  urlRegistry: 'http://localhost:9595/auth/register'
+  urlRegistry: 'https://techforb-o8zd.onrender.com/auth/register'
 };
 
 /*
