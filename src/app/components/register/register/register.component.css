@@ -1,0 +1,56 @@
+.back2{
+    background-color: #343c62;
+    border: 2px solid #b2b8d8; 
+    color: white; 
+   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.back2 h1 {
+    margin-left: 10%;
+}
+
+.row{
+    margin-bottom: 10%;
+}
+
+
+/*form*/
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent ; 
+    box-shadow: none ;
+    border-radius: 0;
+    padding: 5px; 
+    color: white;
+    width: 60%;
+    
+}
+
+.back2 form {    
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+::placeholder{
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-primary{
+    width: 60%;
+    color: #343c62;
+    background-color: white;
+    border-radius: 30px;
+}

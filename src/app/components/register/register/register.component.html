@@ -1,0 +1,49 @@
+<section>
+    <div class="container">
+        <div class="col back2 ">
+            <div class="row">
+                <h1>Logo</h1>
+            </div>
+            <div class="row mx-auto">
+                <form [formGroup]="registerForm" (ngSubmit)="register()">
+
+                    <div class="mb-3 mt-3">
+                        <p class="text-danger"></p>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="firstname" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="firstname" name="firstname" formControlName="firstname">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="lastname" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Apellido" name="lastname" formControlName="lastname">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="username" class="form-label">Número de documento:</label>
+                        <input type="text" class="form-control" id="username" placeholder="" name="username" formControlName="username">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com"
+                            name="email" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="········" name="password" formControlName="password">
+                    </div>
+                 <!--   <div class="mb-3">
+                        <label for="pwd" class="form-label">Repita el password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="········" name="passw">
+                    </div>
+                -->    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                    </div>
+                    <div class="d-grid" style="margin-top: 5px;">
+                        <button (click)="goback()" class="btn btn-primary btn-block">Volver al inicio</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>

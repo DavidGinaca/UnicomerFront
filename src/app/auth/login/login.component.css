@@ -1,0 +1,72 @@
+/*lado izquierdo*/
+.back1{
+    background-image: url("../../../assets/fondoLog.png") ;
+    background-position: center;
+    background-size:  cover;
+    height: 80vh;
+    color: rgb(114, 111, 111);
+    border: 2px solid black ;
+}
+
+.tit{
+    font-weight: bold;
+    color: #343c62;
+}
+
+/*lado derecho*/
+
+.back2{
+    background-color: #343c62;
+    border:  2px solid #505780; 
+    color: white; 
+   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.back2 h1 {
+    margin-left: 10%;
+}
+
+
+
+
+/*form*/
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent ; 
+    box-shadow: none ;
+    border-radius: 0;
+    padding: 5px; 
+    color: white;
+    width: 60%;
+    
+}
+
+.back2 form {    
+    margin-left: 10%;
+}
+
+::placeholder{
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-primary{
+    width: 60%;
+    color: #343c62;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
