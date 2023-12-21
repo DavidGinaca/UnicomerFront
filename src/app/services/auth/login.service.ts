@@ -2,7 +2,8 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { LoginRequest } from './loginRequest';
 import  {  Observable, throwError, catchError, BehaviorSubject , tap, map} from 'rxjs';
-import { environment } from 'src/environments/environment';
+
+
 
 
 @Injectable({
@@ -10,6 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class LoginService {
 
+  urlHost='https://techforb-o8zd.onrender.com/'
   currentUserLoginOn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   currentUserData: BehaviorSubject<String> =new BehaviorSubject<String>("");
 
@@ -19,7 +21,7 @@ export class LoginService {
   }
 
   login(credentials:LoginRequest):Observable<any>{
-    return this.http.post<any>(environment.urlHost+"auth/login",credentials).pipe(
+    return this.http.post<any>(this.urlHost+"auth/login",credentials).pipe(
       tap( (userData) => {
         sessionStorage.setItem("token", userData.token);
         this.currentUserData.next(userData.token);

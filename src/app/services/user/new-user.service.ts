@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class NewUserService {
 
-  
+  urlRegistry='https://techforb-o8zd.onrender.com/auth/register';
 
   constructor(private http: HttpClient) {}
 
